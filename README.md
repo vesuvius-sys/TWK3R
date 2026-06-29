@@ -64,18 +64,6 @@ Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats.
 
 ---
 
-## Build
-
-```
-git clone https://github.com/yourname/twk3r
-cd twk3r
-msbuild twk3r.sln /p:Configuration=Release /p:Platform=x64
-```
-
-NuGet restore will pull SkiaSharp and LibreHardwareMonitor. No other external dependencies.
-
----
-
 ## License
 
 MIT
