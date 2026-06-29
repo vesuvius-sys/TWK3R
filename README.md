@@ -12,17 +12,17 @@ twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspect
 Persistent PowerShell and CMD shells with a shared input bar. Output rendered via RichTextBox on a GPU-composited surface. Supports working-directory tracking, per-shell prompt filtering, and theme-aware banner reprinting on `clear`.
 
 ### DNS Monitor
-Real-time DNS query viewer via ETW (Event IDs 3008/3020). Per-process resolution with icon extraction, A/AAAA pair collapsing (800 ms hold window), NXDOMAIN filtering, svchost deduplication, and human-readable RCODE labels.
+Real-time DNS query viewer via ETW. Per-process resolution with icon extraction, A/AAAA pair collapsing (800 ms hold window), NXDOMAIN filtering, svchost deduplication, and human-readable RCODE labels.
 
-**DnsTracer** annotates each resolved record with RTT (computed from start→result event pairs), result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops), and cache-vs-wire source. Handles modern Windows ETW `type:? N value` format where the RRTYPE number is embedded in the value field rather than the type field. Pending query map is pruned at 1 024 entries with a 30 s TTL to prevent unbounded growth.
+**DnsTracer** annotates each resolved record with RTT (computed from start→result event pairs), result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops), and cache-vs-wire source.
 
 **DNS Inspection** — per-record detail popup. Displays all record fields, resolved IPs colour-coded by type, RTT trace annotation, and raw result string.
 
 ### Config Check
 Parallel audit of:
-- **Unsigned drivers** — WMI + driverquery enumeration, Authenticode verification via `WinVerifyTrust`, SHA-256 (truncated, stored for change detection) and MD5 hashing (skipped for files >64 MB)
-- **Scheduled tasks** — schtasks enumeration, hidden-task detection, random-name heuristics, non-system-path flagging
-- **Services** — WMI + direct registry enumeration (catches entries `Win32_Service` silently omits), signature scoring, hidden-service detection
+- **Unsigned drivers** 
+- **Scheduled tasks** 
+- **Services**
 
 Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
 
@@ -39,19 +39,6 @@ Registry-backed GPO toggle panel. Reads current compliance state per entry, writ
 
 ### Temperature Window
 Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats.
-
----
-
-## Stack
-
-| Thing | Detail |
-|---|---|
-| Runtime | .NET Framework 4.8 |
-| Rendering | SkiaSharp + SKGLControl (GPU) |
-| UI | WinForms, borderless, fully owner-drawn |
-| Hardware | LibreHardwareMonitor |
-| ETW | `Microsoft-Windows-DNS-Client` provider |
-| Interop | WinVerifyTrust, QueryFullProcessImageName, WMI |
 
 ---
 
