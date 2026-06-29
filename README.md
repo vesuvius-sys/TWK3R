@@ -1,4 +1,4 @@
-# twk3r
+# TWK3R
 
 > Deep-system Windows control panel. GPU-rendered, borderless, dark.
 
