@@ -37,9 +37,6 @@ Scans cache, history, cookies, session data, and download records for Chrome, Ed
 ### Policy Configuration
 Registry-backed GPO toggle panel. Reads current compliance state per entry, writes desired values, reports non-compliant settings.
 
-### Background App Permission Manager
-AppX package manager with orphaned key detection, visual badges, and a bulk purge action.
-
 ### Temperature Window
 Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats.
 
