@@ -1,3 +1,5 @@
+<img width="1280" height="480" alt="header_repository" src="https://github.com/user-attachments/assets/8e82b281-6260-477a-82b3-a9c0b5635c74" />
+
 # TWK3R
 
 > Deep-system Windows control panel. GPU-rendered, borderless, dark.
