@@ -20,16 +20,16 @@ Real-time DNS query viewer via ETW (Event IDs 3008/3020). Per-process resolution
 
 ### Config Check
 Parallel audit of:
-- **Unsigned drivers** — WMI + driverquery enumeration, Authenticode verification via `WinVerifyTrust` with proper state-close and memory cleanup, MD5 hash (skipped for files >64 MB)
+- **Unsigned drivers** — WMI + driverquery enumeration, Authenticode verificati, SHA256/MD5 hash (skipped for files >64 MB)
 - **Scheduled tasks** — schtasks enumeration, hidden-task detection, random-name heuristics, non-system-path flagging
-- **Services** — WMI + direct registry enumeration (catches services Win32_Service omits), signature scoring, hidden-service detection
+- **Services** — WMI + direct registry enumeration, signature scoring, hidden-service detection
 
 Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
 
 ### Registry Track Purger
 Scans and purges privacy-relevant registry artifacts across MRU lists, shell bags, typed paths, recent docs, and more. Two-pass CSPRNG overwrite on value data before deletion. Supports per-key risk/forensic metadata with owner-drawn tooltips.
 
-Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation. Theme-reactive; unsubscribes from `Themes.ThemeChanged` in `Dispose` (not `FormClosing`) to stay live across hide/show cycles under the `MakeChild<T>` pre-instantiation pattern.
+Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation.
 
 ### Browser Tracks Purger
 Scans cache, history, cookies, session data, and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode. Integrated browser-terminator dialog detects and kills running browser processes before purge.
@@ -37,11 +37,8 @@ Scans cache, history, cookies, session data, and download records for Chrome, Ed
 ### Policy Configuration
 Registry-backed GPO toggle panel. Reads current compliance state per entry, writes desired values, reports non-compliant settings.
 
-### Background App Permission Manager
-AppX package filter with `-PackageTypeFilter Main`, orphaned BAA key detection, amber badge UI, and a bulk purge action.
-
 ### Temperature Window
-Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats. Anti-flicker via `WS_EX_COMPOSITED` + pre-allocated label pool (no destroy/recreate on update).
+Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats.
 
 ---
 
@@ -59,22 +56,11 @@ Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats. 
 
 ---
 
-## Architecture
-
-Partial-class split throughout: `.cs` holds UI layout and owner-draw, `.handle.cs` / `.Handle.cs` holds logic, scanning, and data models. No business logic in form constructors.
-
-Core rendering rule: one `SKGLControl` per isolated surface. The GL backbuffer blanks on every swap — trying to cache across it doesn't work. Surfaces are scoped to their panel.
-
-`WS_EX_NOACTIVATE` on popups. `WM_ERASEBKGND` suppressed at form and control level where needed. `BackColor` matched to GL clear color to eliminate flicker on unhide.
-
----
-
 ## Requirements
 
 - Windows 10/11 (x64)
 - .NET Framework 4.8
-- Administrator privileges (driver enumeration, ETW subscription, registry write)
-- Visual Studio 2019+ or MSBuild with C# 7.3 support
+- Administrator privileges
 
 ---
 
