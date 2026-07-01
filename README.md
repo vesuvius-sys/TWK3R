@@ -1,85 +1,161 @@
 <img width="1280" height="480" alt="header_repository" src="https://github.com/user-attachments/assets/8e82b281-6260-477a-82b3-a9c0b5635c74" />
 
-# TWK3R
+TWK3R
 
-> Deep-system Windows control panel. GPU-rendered, borderless, dark.
+TWK3R is an advanced Windows utility that brings together system inspection, diagnostics, privacy cleanup, and configuration tools into a single desktop application.
 
-twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspection and cleanup tools under dark-aesthetic interface. Source is not public — releases are distributed as binaries only.
+Designed for power users, developers, enthusiasts, and system administrators, TWK3R provides visibility into areas of Windows that are often scattered across multiple tools—while maintaining a modern, streamlined interface.
 
----
+Source code is not publicly available. Official releases are distributed as binaries only.
 
-## Features
+Highlights
+🖥️ Integrated PowerShell & Command Prompt
+🌐 Real-time DNS monitoring and inspection
+🔍 Driver, service, and scheduled task auditing
+🚗 Comprehensive Windows driver inspection
+📸 Driver snapshot comparison
+🧹 Registry privacy cleanup
+🌍 Browser track cleanup
+🛡️ Windows policy management
+🌡️ CPU & GPU temperature monitoring
+🔒 No telemetry. Everything runs locally.
+Features
+🖥️ Terminal
 
-### Terminal —
-- Persistent PowerShell and CMD shells with a shared input bar.
-- Supports working-directory tracking, per-shell prompt filtering.
+Integrated PowerShell and Command Prompt terminals allow you to work without leaving the application.
 
-### DNS Monitor —
-- Real-time DNS query viewer.
-- Per-process resolution with icon
-- A/AAAA pair collapsing
-- NXDOMAIN filtering
-- #Fixed > Deduplication and human-readable labels.
+Features include:
 
-**DnsTracer** — 
-- Annotates each resolved record with RTT
-- Result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops)
-  and cache-vs-wire source.
+Multiple terminal sessions
+Shared command workflow
+Convenient navigation
+Familiar Windows shell experience
+🌐 DNS Monitor
 
-**DNS Inspection** — 
-- Per-record detail popup. 
-- Displays all record fields, 
-- Resolved IPs colour-coded by type, 
-- RTT trace annotation
-and raw result string.
+Monitor DNS activity as it happens.
 
-### Config Check —
-Parallel audit of:
-- **Unsigned drivers** 
-- **Scheduled tasks** 
-- **Services**
+Features include:
 
-Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
+Live DNS query monitoring
+Process attribution
+Application icons
+Search and filtering
+Cleaner presentation of DNS activity
+Human-readable results
+DNS Tracer
 
-### Driver Detail View —
+Provides additional context for DNS resolutions, including:
 
-- Comprehensive driver inspection window populated from the Config Check scan.
-- Displays all detected drivers, including:
-* Standard kernel drivers
-* File system drivers
-* Filter drivers
-* Hidden or non-standard drivers
-* Boot, system, manual and disabled drivers
+Resolution timing
+Address information
+Resolution summaries
+Additional diagnostic details
+DNS Inspection
 
-Provides detailed metadata per driver and additional properties for in-depth inspection.
+Inspect complete DNS resolution information for individual entries.
 
-### Registry Track Purger —
-- Scans and purges privacy-relevant registry artifacts across.
-- Two-pass overwrite before deletion.
-- Per-key risk and forensic metadata with owner-drawn tooltips.
+Useful for troubleshooting connectivity issues, identifying unexpected requests, and understanding application network behavior.
 
-Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation.
+🔍 Config Check
 
-### Browser Tracks Purger —
-Scans tracks and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode.
+Audit important areas of Windows configuration from a single location.
 
-### Policy Configuration —
-- Selective Policy rules to apply.
-- Reads current compliance state per entry.
-- Writes desired values, reports non-compliant settings.
+Current inspections include:
 
-### Temperature Window —
-- Per-core CPU temps alongside GPU and aggregate stats.
+Driver integrity
+Windows Services
+Scheduled Tasks
 
----
+Results are grouped by severity:
 
-## Requirements
+✅ Clean
+⚠️ Warning
+🚨 Alert
 
-- Windows 10 / 11 (64-bit)
-- .NET Framework 4.8
-- Administrator privileges (driver enumeration, ETW subscription, registry write)
+Each finding can be inspected individually for additional information.
 
----
+🚗 Driver Inspector
+
+Browse every detected Windows driver through a dedicated inspection interface.
+
+Provides detailed information to assist with:
+
+System auditing
+Troubleshooting
+Driver validation
+Security investigations
+⚙️ Service Inspector
+
+Review installed Windows services in a dedicated interface.
+
+Inspect:
+
+Service configuration
+Startup mode
+Current status
+Executable location
+Additional service information
+
+Useful for identifying unexpected services or reviewing system configuration.
+
+📸 Driver Snapshot Comparison
+
+Capture snapshots of installed drivers and compare them over time.
+
+Comparison highlights include:
+
+Newly installed drivers
+Removed drivers
+Modified drivers
+Version changes
+Integrity changes
+
+Ideal for monitoring system changes, troubleshooting updates, and investigating suspicious activity.
+
+🧹 Registry Track Purger
+
+Locate and remove privacy-related registry artifacts.
+
+Features include:
+
+Risk information
+Detailed inspection
+Optional secure deletion
+Automatic Windows Restore Point creation before destructive operations
+🌍 Browser Tracks Purger
+
+Scan and remove browsing traces from supported browsers.
+
+Supported browsers include:
+
+Google Chrome
+Microsoft Edge
+Brave
+Opera
+Mozilla Firefox
+Vivaldi
+Other Chromium-based browsers
+
+Supports both standard and secure deletion modes.
+
+🛡️ Policy Configuration
+
+Review and apply supported Windows policy settings.
+
+Features include:
+
+View current configuration
+Apply recommended settings
+Identify non-compliant entries
+🌡️ Temperature Monitor
+
+Monitor hardware temperatures directly within TWK3R.
+
+Displays:
+
+Per-core CPU temperatures
+GPU temperature
+Overall system statistics
 
 ## Privacy, Integrity & Disclaimer
 
