@@ -33,18 +33,6 @@ twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspect
 - RTT trace annotation
 and raw result string.
 
-**Driver Detail View** —
-
-- Comprehensive driver inspection window populated from the Config Check scan.
-- Displays all detected drivers, including:
-Standard kernel drivers
-File system drivers
-Filter drivers
-Hidden or non-standard drivers
-Boot, system, manual and disabled drivers
-
-Provides detailed metadata per driver and additional properties for in-depth inspection.
-
 ### Config Check —
 Parallel audit of:
 - **Unsigned drivers** 
@@ -52,6 +40,18 @@ Parallel audit of:
 - **Services**
 
 Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
+
+### Driver Detail View —
+
+- Comprehensive driver inspection window populated from the Config Check scan.
+- Displays all detected drivers, including:
+* Standard kernel drivers
+* File system drivers
+* Filter drivers
+* Hidden or non-standard drivers
+* Boot, system, manual and disabled drivers
+
+Provides detailed metadata per driver and additional properties for in-depth inspection.
 
 ### Registry Track Purger —
 - Scans and purges privacy-relevant registry artifacts across.
