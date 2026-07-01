@@ -10,18 +10,18 @@ twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspect
 
 ## Features
 
-### Terminal
+### Terminal —
 - Persistent PowerShell and CMD shells with a shared input bar.
 - Supports working-directory tracking, per-shell prompt filtering.
 
-### DNS Monitor
+### DNS Monitor —
 - Real-time DNS query viewer.
 - Per-process resolution with icon
 - A/AAAA pair collapsing
 - NXDOMAIN filtering
 - #Fixed > Deduplication and human-readable labels.
 
-**DnsTracer** 
+**DnsTracer** — 
 - Annotates each resolved record with RTT
 - Result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops)
   and cache-vs-wire source.
@@ -33,7 +33,19 @@ twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspect
 - RTT trace annotation
 and raw result string.
 
-### Config Check
+**Driver Detail View** —
+
+- Comprehensive driver inspection window populated from the Config Check scan.
+- Displays all detected drivers, including:
+Standard kernel drivers
+File system drivers
+Filter drivers
+Hidden or non-standard drivers
+Boot, system, manual and disabled drivers
+
+Provides detailed metadata per driver and additional properties for in-depth inspection.
+
+### Config Check —
 Parallel audit of:
 - **Unsigned drivers** 
 - **Scheduled tasks** 
@@ -41,22 +53,22 @@ Parallel audit of:
 
 Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
 
-### Registry Track Purger
+### Registry Track Purger —
 - Scans and purges privacy-relevant registry artifacts across.
 - Two-pass overwrite before deletion.
 - Per-key risk and forensic metadata with owner-drawn tooltips.
 
 Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation.
 
-### Browser Tracks Purger
+### Browser Tracks Purger —
 Scans tracks and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode.
 
-### Policy Configuration
+### Policy Configuration —
 - Selective Policy rules to apply.
 - Reads current compliance state per entry.
 - Writes desired values, reports non-compliant settings.
 
-### Temperature Window
+### Temperature Window —
 - Per-core CPU temps alongside GPU and aggregate stats.
 
 ---
