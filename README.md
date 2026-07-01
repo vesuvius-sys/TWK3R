@@ -1,195 +1,116 @@
 <img width="1280" height="480" alt="header_repository" src="https://github.com/user-attachments/assets/8e82b281-6260-477a-82b3-a9c0b5635c74" />
 
-TWK3R
+<div align="center">
 
-TWK3R is an advanced Windows utility that brings together system inspection, diagnostics, privacy cleanup, and configuration tools into a single desktop application.
+# TWK3R
 
-Designed for power users, developers, enthusiasts, and system administrators, TWK3R provides visibility into areas of Windows that are often scattered across multiple tools—while maintaining a modern, streamlined interface.
+**A unified Windows utility for system inspection, diagnostics, and configuration management.**
 
-Source code is not publicly available. Official releases are distributed as binaries only.
+Source is closed. Binaries only. Official releases are published exclusively through this repository.
 
-Highlights
-🖥️ Integrated PowerShell & Command Prompt
-🌐 Real-time DNS monitoring and inspection
-🔍 Driver, service, and scheduled task auditing
-🚗 Comprehensive Windows driver inspection
-📸 Driver snapshot comparison
-🧹 Registry privacy cleanup
-🌍 Browser track cleanup
-🛡️ Windows policy management
-🌡️ CPU & GPU temperature monitoring
-🔒 No telemetry. Everything runs locally.
-Features
-🖥️ Terminal
+</div>
 
-Integrated PowerShell and Command Prompt terminals allow you to work without leaving the application.
+---
 
-Features include:
+## Overview
 
-Multiple terminal sessions
-Shared command workflow
-Convenient navigation
-Familiar Windows shell experience
-🌐 DNS Monitor
+TWK3R consolidates system inspection, diagnostics, privacy management, and configuration tooling into a single desktop application for Windows.
 
-Monitor DNS activity as it happens.
+It is built for power users, developers, system administrators, and anyone who wants direct visibility into how their system is configured — without relying on a patchwork of separate utilities.
 
-Features include:
+TWK3R runs entirely on the local machine. Nothing is transmitted anywhere.
 
-Live DNS query monitoring
-Process attribution
-Application icons
-Search and filtering
-Cleaner presentation of DNS activity
-Human-readable results
-DNS Tracer
+---
 
-Provides additional context for DNS resolutions, including:
+## Capabilities
 
-Resolution timing
-Address information
-Resolution summaries
-Additional diagnostic details
-DNS Inspection
+- Integrated shell access (PowerShell and Command Prompt)
+- Real-time network activity monitoring
+- System configuration auditing across drivers, services, and scheduled tasks
+- Full driver inventory and inspection
+- Point-in-time system snapshots with comparison over time
+- Privacy-related data management
+- Browser data management
+- Windows policy review and configuration
+- Hardware temperature monitoring (CPU / GPU)
 
-Inspect complete DNS resolution information for individual entries.
+---
 
-Useful for troubleshooting connectivity issues, identifying unexpected requests, and understanding application network behavior.
+## Feature Summary
 
-🔍 Config Check
+### Terminal
 
-Audit important areas of Windows configuration from a single location.
+A built-in shell environment supporting multiple concurrent sessions, so common administrative work can be done without leaving the application.
 
-Current inspections include:
+### Network Monitor
 
-Driver integrity
-Windows Services
-Scheduled Tasks
+Live visibility into network resolution activity, including the responsible process, application context, and detailed per-entry inspection. Designed for troubleshooting connectivity issues and understanding application behavior at a glance.
 
-Results are grouped by severity:
+### Configuration Audit
 
-✅ Clean
-⚠️ Warning
-🚨 Alert
+A centralized audit of key Windows configuration areas — including driver integrity, installed services, and scheduled tasks. Findings are grouped by severity (Clean / Warning / Alert) and can be inspected individually for further detail.
 
-Each finding can be inspected individually for additional information.
+### Driver Inspector
 
-🚗 Driver Inspector
+A dedicated interface for browsing and reviewing every detected driver on the system, supporting auditing, troubleshooting, and validation workflows.
 
-Browse every detected Windows driver through a dedicated inspection interface.
+### Service Inspector
 
-Provides detailed information to assist with:
+Detailed review of installed Windows services, including configuration, startup behavior, current status, and executable origin — useful for spotting anomalies or reviewing baseline configuration.
 
-System auditing
-Troubleshooting
-Driver validation
-Security investigations
-⚙️ Service Inspector
+### Snapshot Comparison
 
-Review installed Windows services in a dedicated interface.
+Capture a snapshot of installed drivers and compare it against a later state to surface additions, removals, modifications, version changes, and integrity changes over time.
 
-Inspect:
+### Privacy Data Management
 
-Service configuration
-Startup mode
-Current status
-Executable location
-Additional service information
+Locate and manage privacy-relevant system artifacts, with detailed risk context, optional secure removal, and automatic Restore Point creation prior to any destructive action.
 
-Useful for identifying unexpected services or reviewing system configuration.
+### Browser Data Management
 
-📸 Driver Snapshot Comparison
+Scan and manage browsing data across all major Chromium-based browsers as well as Firefox, with support for both standard and secure removal modes.
 
-Capture snapshots of installed drivers and compare them over time.
+### Policy Configuration
 
-Comparison highlights include:
+Review current Windows policy configuration, identify non-compliant entries, and apply recommended settings from a single interface.
 
-Newly installed drivers
-Removed drivers
-Modified drivers
-Version changes
-Integrity changes
+### Temperature Monitor
 
-Ideal for monitoring system changes, troubleshooting updates, and investigating suspicious activity.
+Real-time hardware temperature reporting, including per-core CPU readings and GPU temperature, alongside overall system statistics.
 
-🧹 Registry Track Purger
+---
 
-Locate and remove privacy-related registry artifacts.
+## Privacy & Data Handling
 
-Features include:
+**TWK3R does not collect, transmit, store, or share any data.**
 
-Risk information
-Detailed inspection
-Optional secure deletion
-Automatic Windows Restore Point creation before destructive operations
-🌍 Browser Tracks Purger
+This includes system information, hardware details, browsing history, registry contents, or any other information the application reads or displays. All functionality is executed locally.
 
-Scan and remove browsing traces from supported browsers.
+There is no telemetry, analytics, crash reporting, update pinging, or licensing verification that communicates externally. No servers, databases, accounts, or logs exist on our end — we have not built any infrastructure to receive data, because none is ever sent.
 
-Supported browsers include:
+We consider unauthorized data collection to be fundamentally incompatible with this project's purpose, and it will not be introduced under any circumstances.
 
-Google Chrome
-Microsoft Edge
-Brave
-Opera
-Mozilla Firefox
-Vivaldi
-Other Chromium-based browsers
+---
 
-Supports both standard and secure deletion modes.
+## Responsible Use
 
-🛡️ Policy Configuration
+TWK3R is provided as a system administration and diagnostic tool. Like any utility of this kind, it can be used responsibly or irresponsibly.
 
-Review and apply supported Windows policy settings.
+It is built in good faith for users seeking to understand and manage systems they own or are authorized to administer. Responsibility for how the tool is used lies entirely with the user. The maintainers do not endorse, encourage, or accept liability for misuse.
 
-Features include:
+**Use this software only on systems you own or have explicit authorization to manage.**
 
-View current configuration
-Apply recommended settings
-Identify non-compliant entries
-🌡️ Temperature Monitor
+---
 
-Monitor hardware temperatures directly within TWK3R.
+## Official Distribution
 
-Displays:
+This repository is the **only** official source for TWK3R releases.
 
-Per-core CPU temperatures
-GPU temperature
-Overall system statistics
+No third-party download sites, app stores, mirrors, or bundled installers are authorized distribution channels. If TWK3R was obtained from any source other than this repository, its integrity cannot be verified and it should not be trusted.
 
-## Privacy, Integrity & Disclaimer
+Should an additional distribution channel ever be introduced, it will be announced with a clearly visible notice at the top of this README, including justification and verification instructions. No such change will be made silently.
 
-### We do not collect anything
-
-twk3r does not collect, transmit, store, or share any information about you, your system, your hardware, your browsing history, your registry contents, or anything else it reads or displays.
-
-Everything this program does happens locally on your machine. No telemetry. No analytics. No crash reporting. No update pings. No licensing calls. Nothing leaves your computer. There are no servers on our end, no databases, no accounts, no logs. We have no infrastructure to receive data with, and we have not built any.
-
-### We care about your privacy
-
-This project exists precisely because we believe privacy is not a feature — it is a right. twk3r was built to give users visibility and control over what Windows stores about them, not to add another application quietly phoning home. We would consider building any kind of data collection into this tool to be a direct contradiction of its purpose, and we will never do it.
-
-### Misuse is not our responsibility
-
-TWK3R like any tool, it can be used responsibly or irresponsibly. 
-We build it in good faith for users who want to understand and manage their own systems. 
-If someone chooses to use it in a way that causes harm — to themselves, to others, or to systems they do not own or have permission to modify — that is entirely their responsibility, not ours. 
-
-We do not endorse, encourage, or accept liability for any misuse.
-
-Use this software on systems you own or have explicit permission to manage.
-
-### Official distribution — this repository only
-
-The only place we will ever publish a release of twk3r is this GitHub repository. No third-party download sites. No app stores. No mirror hosting. No bundled installers distributed through other channels.
-
-If you downloaded twk3r from anywhere other than this repository, we cannot vouch for what you received. It may have been tampered with. We strongly recommend only ever obtaining releases directly from here.
-
-### If that ever changes, you will know
-
-If we ever need to distribute through an additional channel — for any reason — we will post a clearly visible notice at the top of this README explaining what that channel is, why we are using it, and how to verify the release. We will not make that change silently.
-
-If you see no such notice, assume this repository is the only legitimate source.
+**If no such notice is present, this repository is the sole legitimate source.**
 
 ---
 
