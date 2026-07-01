@@ -49,11 +49,11 @@ Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
 Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation.
 
 ### Browser Tracks Purger
-Scans cache, history, cookies, session data, and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode. Integrated browser-terminator dialog detects and kills running browser processes before purge.
+Scans tracks and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode.
 
 ### Policy Configuration
-- Registry-backed GPO toggle panel. 
-- Reads current compliance state per entry,
+- Selective Policy rules to apply.
+- Reads current compliance state per entry.
 - Writes desired values, reports non-compliant settings.
 
 ### Temperature Window
