@@ -4,21 +4,34 @@
 
 > Deep-system Windows control panel. GPU-rendered, borderless, dark.
 
-twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspection and cleanup tools under one cyberpunk-aesthetic interface. Everything is rendered through SkiaSharp/SKGLControl — no stock controls, no visual styles. Source is not public — releases are distributed as binaries only.
+twk3r is a .NET 4.8 WinForms utility that consolidates low-level Windows inspection and cleanup tools under dark-aesthetic interface. Source is not public — releases are distributed as binaries only.
 
 ---
 
 ## Features
 
 ### Terminal
-Persistent PowerShell and CMD shells with a shared input bar. Output rendered via RichTextBox on a GPU-composited surface. Supports working-directory tracking, per-shell prompt filtering, and theme-aware banner reprinting on `clear`.
+- Persistent PowerShell and CMD shells with a shared input bar.
+- Supports working-directory tracking, per-shell prompt filtering.
 
 ### DNS Monitor
-Real-time DNS query viewer via ETW. Per-process resolution with icon extraction, A/AAAA pair collapsing (800 ms hold window), NXDOMAIN filtering, svchost deduplication, and human-readable RCODE labels.
+- Real-time DNS query viewer.
+- Per-process resolution with icon
+- A/AAAA pair collapsing
+- NXDOMAIN filtering
+- #Fixed > Deduplication and human-readable labels.
 
-**DnsTracer** annotates each resolved record with RTT (computed from start→result event pairs), result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops), and cache-vs-wire source.
+**DnsTracer** 
+- Annotates each resolved record with RTT
+- Result composition summary (IPv4 count, IPv6 count, IPv4-mapped detection, CNAME hops)
+  and cache-vs-wire source.
 
-**DNS Inspection** — per-record detail popup. Displays all record fields, resolved IPs colour-coded by type, RTT trace annotation, and raw result string.
+**DNS Inspection** — 
+- Per-record detail popup. 
+- Displays all record fields, 
+- Resolved IPs colour-coded by type, 
+- RTT trace annotation
+and raw result string.
 
 ### Config Check
 Parallel audit of:
@@ -29,7 +42,9 @@ Parallel audit of:
 Results grouped by severity (Clean / Warning / Alert) with per-entry drill-down.
 
 ### Registry Track Purger
-Scans and purges privacy-relevant registry artifacts across MRU lists, shell bags, typed paths, recent docs, and more. Two-pass CSPRNG overwrite on value data before deletion. Per-key risk and forensic metadata with owner-drawn tooltips.
+- Scans and purges privacy-relevant registry artifacts across.
+- Two-pass overwrite before deletion.
+- Per-key risk and forensic metadata with owner-drawn tooltips.
 
 Pre-purge safety via **RestorePointDialog** — creates a VSS system restore snapshot before any destructive operation.
 
@@ -37,10 +52,12 @@ Pre-purge safety via **RestorePointDialog** — creates a VSS system restore sna
 Scans cache, history, cookies, session data, and download records for Chrome, Edge, Brave, Opera, Firefox, Vivaldi, and others. Standard or secure (overwrite) deletion mode. Integrated browser-terminator dialog detects and kills running browser processes before purge.
 
 ### Policy Configuration
-Registry-backed GPO toggle panel. Reads current compliance state per entry, writes desired values, reports non-compliant settings.
+- Registry-backed GPO toggle panel. 
+- Reads current compliance state per entry,
+- Writes desired values, reports non-compliant settings.
 
 ### Temperature Window
-Singleton overlay showing per-core CPU temps alongside GPU and aggregate stats.
+- Per-core CPU temps alongside GPU and aggregate stats.
 
 ---
 
@@ -66,7 +83,11 @@ This project exists precisely because we believe privacy is not a feature — it
 
 ### Misuse is not our responsibility
 
-twk3r is a tool. Like any tool, it can be used responsibly or irresponsibly. We build it in good faith for users who want to understand and manage their own systems. If someone chooses to use it in a way that causes harm — to themselves, to others, or to systems they do not own or have permission to modify — that is entirely their responsibility, not ours. We do not endorse, encourage, or accept liability for any misuse.
+TWK3R like any tool, it can be used responsibly or irresponsibly. 
+We build it in good faith for users who want to understand and manage their own systems. 
+If someone chooses to use it in a way that causes harm — to themselves, to others, or to systems they do not own or have permission to modify — that is entirely their responsibility, not ours. 
+
+We do not endorse, encourage, or accept liability for any misuse.
 
 Use this software on systems you own or have explicit permission to manage.
 
