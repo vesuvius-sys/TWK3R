@@ -8,6 +8,9 @@
 
 Source is closed. Binaries only. Official releases are published exclusively through this repository.
 
+This tool is designed for user privacy on systems they own. It is not intended to bypass security systems, 
+evade detection, or interfere with forensic investigations in enterprise or law enforcement environments.
+
 </div>
 
 ---
