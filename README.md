@@ -15,13 +15,25 @@ evade detection, or interfere with forensic investigations in enterprise or law 
 
 ---
 
-## Overview
+### About This Tool
 
-TWK3R consolidates system inspection, diagnostics, privacy management, and configuration tooling into a single desktop application for Windows.
+Windows is deep, and most of what happens under the hood is invisible by design. 
 
-It is built for power users, developers, system administrators, and anyone who wants direct visibility into how their system is configured — without relying on a patchwork of separate utilities.
+This tool exists to make that visible — every registry key and tracking file it touches comes with a real explanation, not just a checkbox to click. The goal is understanding, not just cleaning.
+This is not, and will never be, an antivirus. 
 
-TWK3R runs entirely on the local machine. Nothing is transmitted anywhere.
+It's an inspection tool first — something to help you see what's actually on your system and why, faster than digging through it manually. 
+
+Cleanup is secondary to that.
+
+Beyond registry and tracking cleanup, it also covers: browser cleaning, driver checks, scheduled task inspection, service checks, policy configuration, a temp file viewer, CMD and PowerShell in one place, an adjustable theme, and a DNS viewer with full detail inspection of each query.
+For best results, pair it with O&O ShutUp10/11 — together they cover most tracking and telemetry. 
+
+Add any VPN on top 
+(we're not sponsored by or promoting one, but we personally like Proton VPN) 
+and you've got a solid privacy baseline. 
+
+We mention this only because we care about your privacy, not for any commercial reason.
 
 ---
 
