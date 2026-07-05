@@ -17,25 +17,13 @@ evade detection, or interfere with forensic investigations in enterprise or law 
 
 ### About This Tool
 
-Windows is deep, and most of what happens under the hood is invisible by design.
+Windows hides most of what it's actually doing. This tool makes it visible — every registry key and tracking file comes with a real explanation, not just a checkbox.
 
-This tool exists to make that visible — every registry key and tracking file it touches comes with a real explanation, not just a checkbox to click. The goal is understanding, not just cleaning.
+Not an antivirus. An inspection tool first: see what's on your system and why, before you decide what to do about it.
 
-This is not, and will never be, an antivirus.
+It also covers browser cleaning, driver checks, scheduled tasks, services, policies, a temp file viewer, CMD/PowerShell in one place, an adjustable theme, and a detailed DNS query viewer.
 
-It's an inspection tool first — something to help you see what's actually on your system and why, faster than digging through it manually.
-
-Cleanup is secondary to that.
-
-Beyond registry and tracking cleanup, it also covers: browser cleaning, driver checks, scheduled task inspection, service checks, policy configuration, a temp file viewer, CMD and PowerShell in one place, an adjustable theme, and a DNS viewer with full detail inspection of each query.
-
-For best results, pair it with O&O ShutUp10/11 — together they cover most tracking and telemetry.
-
-Add any VPN on top
-(we're not sponsored by or promoting one, but we personally like Proton VPN)
-and you've got a solid privacy baseline.
-
-We mention this only because we care about your privacy, not for any commercial reason.
+Pairs well with O&O ShutUp10/11 and any VPN (we like Proton, no sponsorship) for a solid privacy baseline.
 
 ---
 
@@ -57,16 +45,16 @@ We mention this only because we care about your privacy, not for any commercial 
 
 | Feature | Description |
 |---|---|
-| **Terminal** | A built-in shell environment supporting multiple concurrent sessions, so common administrative work can be done without leaving the application. |
-| **Network Monitor** | Live visibility into network resolution activity, including the responsible process, application context, and detailed per-entry inspection. Designed for troubleshooting connectivity issues and understanding application behavior at a glance. |
-| **Configuration Audit** | A centralized audit of key Windows configuration areas — including driver integrity, installed services, and scheduled tasks. Findings are grouped by severity (Clean / Warning / Alert) and can be inspected individually for further detail. |
-| **Driver Inspector** | A dedicated interface for browsing and reviewing every detected driver on the system, supporting auditing, troubleshooting, and validation workflows. |
-| **Service Inspector** | Detailed review of installed Windows services, including configuration, startup behavior, current status, and executable origin — useful for spotting anomalies or reviewing baseline configuration. |
-| **Snapshot Comparison** | Capture a snapshot of installed drivers and compare it against a later state to surface additions, removals, modifications, version changes, and integrity changes over time. |
-| **Privacy Data Management** | Locate and manage privacy-relevant system artifacts, with detailed risk context, optional secure removal, and automatic Restore Point creation prior to any destructive action. |
-| **Browser Data Management** | Scan and manage browsing data across all major Chromium-based browsers as well as Firefox, with support for both standard and secure removal modes. |
-| **Policy Configuration** | Review current Windows policy configuration, identify non-compliant entries, and apply recommended settings from a single interface. |
-| **Temperature Monitor** | Real-time hardware temperature reporting, including per-core CPU readings and GPU temperature, alongside overall system statistics. |
+| **Terminal** | PowerShell and Command Prompt, multiple sessions, built in. |
+| **Network Monitor** | Live DNS/network activity with responsible process and per-entry detail. |
+| **Configuration Audit** | Drivers, services, and scheduled tasks, graded Clean / Warning / Alert. |
+| **Driver Inspector** | Browse and review every detected driver on the system. |
+| **Service Inspector** | Config, startup behavior, status, and executable origin for every service. |
+| **Snapshot Comparison** | Compare driver state over time — additions, removals, version changes. |
+| **Privacy Data Management** | Find privacy-relevant artifacts with risk context and safe removal. |
+| **Browser Data Management** | Clean Chromium browsers and Firefox, standard or secure mode. |
+| **Policy Configuration** | Review Windows policy, flag non-compliant entries, apply fixes. |
+| **Temperature Monitor** | Real-time CPU (per-core) and GPU temperatures. |
 
 ---
 
