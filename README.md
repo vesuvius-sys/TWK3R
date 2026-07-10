@@ -6,10 +6,7 @@
 
 **A unified Windows utility for system inspection, diagnostics, and configuration management.**
 
-Source is closed. Binaries only. Official releases are published exclusively through this repository.
-
-This tool is designed for user privacy on systems they own. It is not intended to bypass security systems,
-evade detection, or interfere with forensic investigations in enterprise or law enforcement environments.
+Closed source. Binaries only. Official releases are published exclusively through this repository.
 
 </div>
 
@@ -17,11 +14,11 @@ evade detection, or interfere with forensic investigations in enterprise or law 
 
 ### About This Tool
 
-Windows hides most of what it's actually doing. This tool makes it visible — every registry key and tracking file comes with a real explanation, not just a checkbox.
+Windows hides most of what it's actually doing. TWK3R makes it visible — every registry key and tracking file comes with a real explanation, not just a checkbox.
 
 Not an antivirus. An inspection tool first: see what's on your system and why, before you decide what to do about it.
 
-It also covers browser cleaning, driver checks, scheduled tasks, services, policies, a temp file viewer, CMD/PowerShell in one place, an adjustable theme, and a detailed DNS query viewer.
+Covers browser cleaning, driver checks, scheduled tasks, services, policies, a temp file viewer, CMD/PowerShell in one place, an adjustable theme, and a detailed DNS query viewer.
 
 Pairs well with O&O ShutUp10/11 and any VPN (we like Proton, no sponsorship) for a solid privacy baseline.
 
@@ -54,9 +51,11 @@ Unauthorized data collection is incompatible with this project's purpose and wil
 
 ## Responsible Use
 
-Built in good faith for people managing systems they own or are authorized to administer. How it's used is entirely on the user — we don't endorse or accept liability for misuse.
+TWK3R is built for people managing systems they own or are authorized to administer. It is not intended to bypass security systems, evade detection, or interfere with forensic investigations in enterprise or law enforcement environments.
 
 **Use this software only on systems you own or have explicit authorization to manage.**
+
+How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./TWK3R_EULA_v2.md).
 
 ---
 
@@ -64,12 +63,10 @@ Built in good faith for people managing systems they own or are authorized to ad
 
 This repository is the **only** official source for TWK3R. No third-party sites, stores, mirrors, or bundled installers are authorized — if you got it elsewhere, don't trust it.
 
-Any future distribution channel will be announced clearly at the top of this README, never silently.
-
-**If no such notice is present, this repository is the sole legitimate source.**
+Any future distribution channel will be announced at the top of this README, never silently. If no such notice is present, this repository is the sole legitimate source.
 
 ---
 
 ## License
 
-MIT
+All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./TWK3R_EULA_v2.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
