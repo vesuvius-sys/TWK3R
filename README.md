@@ -66,7 +66,3 @@ This repository is the **only** official source for TWK3R. No third-party sites,
 Any future distribution channel will be announced at the top of this README, never silently. If no such notice is present, this repository is the sole legitimate source.
 
 ---
-
-## License
-
-All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./TWK3R_EULA_v2.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
