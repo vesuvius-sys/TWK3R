@@ -1,0 +1,70 @@
+END USER LICENSE AGREEMENT (EULA)
+TWK3R
+
+Last updated: July 11, 2026
+
+This End User License Agreement ("Agreement") is a legal agreement between you ("User") and the author/owner of TWK3R ("Author", "we", "us") governing your use of the TWK3R software, including all executables, drivers, scripts, and associated files distributed with it (the "Software").
+
+By downloading, installing, or running the Software, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the Software.
+
+1. LICENSE GRANT
+
+Subject to your compliance with this Agreement, the Author grants you a limited, non-exclusive, non-transferable, revocable license to download and run the Software for your own personal or internal use.
+
+This license does not grant you any ownership rights in the Software. All rights not expressly granted to you are reserved by the Author.
+
+2. RESTRICTIONS
+
+You may NOT, under any circumstances:
+
+* Redistribute, upload, mirror, share, sell, rent, lease, sublicense, or otherwise make the Software available to any third party, whether modified or unmodified, whether for free or for payment, unless explicitly authorized in writing by the Author.
+* Reverse engineer, decompile, disassemble, or attempt to derive the source code, algorithms, or underlying structure of the Software, except to the extent such restriction is expressly prohibited by applicable law.
+* Modify, patch, or create derivative works based on the Software.
+* Remove, obscure, or alter any copyright, trademark, or other proprietary notices contained in the Software.
+* Use the Software to build or assist in building a competing product or service.
+* Represent yourself as the author, co-author, or owner of the Software.
+* Use the Software for any illegal purpose, or in a manner that violates the rights of any third party, including unauthorized access to systems you do not own or have explicit permission to test.
+
+3. NO SOURCE CODE PROVIDED
+
+The Software is distributed in binary/compiled form only. No source code is provided or licensed under this Agreement.
+
+4. FUTURE MONETIZATION
+
+The Software is currently provided free of charge. The Author reserves the right, at their sole discretion and at any time, to introduce paid versions, paid tiers, licensing fees, or other monetization models for current or future versions of the Software. Continued use of any future paid version will be subject to separate terms provided at that time. This Agreement does not obligate the Author to keep any version of the Software free indefinitely.
+
+5. THIRD-PARTY COMPONENTS
+
+The Software may include or interact with third-party components (for example, LibreHardwareMonitorLib) which remain subject to their own respective licenses. Nothing in this Agreement grants you rights to those components beyond what their own licenses permit.
+
+6. SYSTEM ACCESS DISCLAIMER
+
+The Software is an inspection and system-modification tool that interacts directly with low-level operating system components, including the Windows registry, scheduled tasks, drivers, services, and system files. The Software is intended for use by individuals who understand the function and risk of each feature before using it. The Author is not responsible for any misuse, misconfiguration, or unintended system changes resulting from use of the Software.
+
+7. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR THAT THE SOFTWARE WILL BE ERROR-FREE OR UNINTERRUPTED. YOU USE THE SOFTWARE ENTIRELY AT YOUR OWN RISK.
+
+8. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR SYSTEM FUNCTIONALITY, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE AUTHOR'S TOTAL LIABILITY FOR ANY CLAIM ARISING FROM THIS AGREEMENT OR THE SOFTWARE SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE (IF ANY).
+
+9. ANTIVIRUS / FALSE POSITIVE NOTICE
+
+The Software may be flagged by antivirus software or services such as VirusTotal due to its low-level interaction with system files, the registry, and drivers. This does not necessarily indicate malicious behavior. The Author makes no guarantee that any specific antivirus vendor will not flag the Software, now or in the future.
+
+10. TERMINATION
+
+This license is effective until terminated. The Author may terminate this Agreement at any time if you fail to comply with any term herein. Upon termination, you must cease all use of the Software and delete all copies in your possession.
+
+11. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws applicable to the Author's jurisdiction, without regard to conflict of law principles, unless otherwise required by applicable local law.
+
+12. CHANGES TO THIS AGREEMENT
+
+The Author reserves the right to modify this Agreement at any time. Continued use of the Software after changes are published constitutes acceptance of the revised Agreement.
+
+13. ACKNOWLEDGMENT
+
+By using the Software, you acknowledge that you have read this Agreement, understand it, and agree to be bound by its terms.
