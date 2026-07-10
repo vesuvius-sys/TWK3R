@@ -1,13 +1,13 @@
 <img width="1280" height="480" alt="header_repository" src="https://github.com/user-attachments/assets/8e82b281-6260-477a-82b3-a9c0b5635c74" />
-
 <div align="center">
-
+  
 # TWK3R
-
+  
 **A unified Windows utility for system inspection, diagnostics, and configuration management.**
+Source is closed. Binaries only. Official releases are published exclusively through this repository.
 
-Closed source. Binaries only. Official releases are published exclusively through this repository.
-
+This tool is designed for user privacy on systems they own. It is not intended to bypass security systems,
+evade detection, or interfere with forensic investigations in enterprise or law enforcement environments.
 </div>
 
 ---
