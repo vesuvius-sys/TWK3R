@@ -1,0 +1,98 @@
+END USER LICENSE AGREEMENT (EULA)
+TWK3R
+
+Last updated: July 11, 2026
+
+This End User License Agreement ("Agreement") is a legal agreement between you ("User", "you") and the author/owner of TWK3R ("Author", "we", "us") governing your use of the TWK3R software, including all executables, drivers, scripts, and associated files distributed with it (the "Software").
+
+By downloading, installing, or running the Software, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the Software.
+
+1. LICENSE GRANT
+
+Subject to your compliance with this Agreement, the Author grants you a limited, non-exclusive, non-transferable, revocable license to download and run the Software for your own personal or internal use.
+
+This license does not grant you any ownership rights in the Software. All rights not expressly granted to you are reserved by the Author.
+
+2. ELIGIBILITY AND USER REPRESENTATIONS
+
+By using the Software, you represent and warrant that:
+
+* You are legally permitted to download, install, and use software of this nature in your jurisdiction.
+* You are using the Software only on systems you personally own, or on systems for which you have explicit, lawful authorization to install and run system-modification tools.
+* You are not using the Software to circumvent monitoring, security controls, or data retention that another party has lawfully placed on a system, account, or network you do not solely own or control.
+
+3. RESTRICTIONS
+
+You may NOT, under any circumstances:
+
+* Redistribute, upload, mirror, share, sell, rent, lease, sublicense, or otherwise make the Software available to any third party, whether modified or unmodified, whether for free or for payment, unless explicitly authorized in writing by the Author.
+* Reverse engineer, decompile, disassemble, or attempt to derive the source code, algorithms, or underlying structure of the Software, except to the extent such restriction is expressly prohibited by applicable law.
+* Modify, patch, or create derivative works based on the Software.
+* Remove, obscure, or alter any copyright, trademark, or other proprietary notices contained in the Software.
+* Use the Software to build or assist in building a competing product or service.
+* Represent yourself as the author, co-author, or owner of the Software.
+* Use the Software for any illegal purpose, or in a manner that violates the rights of any third party, including unauthorized access to systems you do not own or have explicit permission to modify.
+* Use the Software to evade monitoring, auditing, or security controls on any system where such monitoring is legally authorized by the system's owner, an employer, a guardian, or a court of competent jurisdiction.
+* Use the Software to destroy, conceal, or tamper with evidence in connection with any actual or anticipated legal proceeding, investigation, or audit.
+
+4. NO SOURCE CODE PROVIDED
+
+The Software is distributed in binary/compiled form only. No source code is provided or licensed under this Agreement.
+
+5. FUTURE MONETIZATION
+
+The Software is currently provided free of charge. The Author reserves the right, at their sole discretion and at any time, to introduce paid versions, paid tiers, licensing fees, or other monetization models for current or future versions of the Software. Continued use of any future paid version will be subject to separate terms provided at that time. This Agreement does not obligate the Author to keep any version of the Software free indefinitely.
+
+6. THIRD-PARTY COMPONENTS
+
+The Software may include or interact with third-party components (for example, LibreHardwareMonitorLib) which remain subject to their own respective licenses. Nothing in this Agreement grants you rights to those components beyond what their own licenses permit.
+
+7. SYSTEM ACCESS DISCLAIMER
+
+The Software is an inspection and system-modification tool that interacts directly with low-level operating system components, including the Windows registry, scheduled tasks, drivers, services, and system files. The Software is intended for use by individuals who understand the function and risk of each feature before using it. It is not a "click and go" optimizer, and the Author makes no attempt to explain the real-world consequence of every setting the Software allows you to change. The Author is not responsible for any misuse, misconfiguration, or unintended system changes resulting from use of the Software.
+
+8. NO GUARANTEE OF EFFECTIVENESS OR UNDETECTABILITY
+
+The Software's scanning, cleanup, and service-control features are provided on a best-effort basis. The Author makes no representation or guarantee that:
+
+* Any data, log, registry entry, or trace cleared by the Software is permanently or forensically unrecoverable;
+* Use of the Software will render your system, network activity, or usage history untraceable, undetectable, or hidden from any third party, employer, network administrator, or legal authority;
+* Disabling any service, driver, or scheduled task through the Software will not affect system stability, security, or the functioning of other software.
+
+You assume full responsibility for verifying that the Software's behavior meets your actual needs before relying on it for any privacy-sensitive or security-sensitive purpose.
+
+9. ANTIVIRUS / FALSE POSITIVE NOTICE
+
+The Software may be flagged by antivirus software or services such as VirusTotal due to its low-level interaction with system files, the registry, and drivers. This does not necessarily indicate malicious behavior. The Author makes no guarantee that any specific antivirus vendor will not flag the Software, now or in the future.
+
+10. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR THAT THE SOFTWARE WILL BE ERROR-FREE OR UNINTERRUPTED. YOU USE THE SOFTWARE ENTIRELY AT YOUR OWN RISK.
+
+11. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR SYSTEM FUNCTIONALITY, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE AUTHOR'S TOTAL LIABILITY FOR ANY CLAIM ARISING FROM THIS AGREEMENT OR THE SOFTWARE SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE (IF ANY).
+
+12. INDEMNIFICATION
+
+You agree to indemnify, defend, and hold harmless the Author from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising out of or related to: (a) your use or misuse of the Software; (b) your violation of this Agreement; (c) your violation of any law or the rights of any third party; or (d) any claim brought by a third party arising from actions you took using the Software.
+
+13. EXPORT COMPLIANCE
+
+You agree to comply with all applicable export control and economic sanctions laws and regulations in your use of, or access to, the Software, and you will not use the Software in any jurisdiction or manner prohibited by such laws.
+
+14. TERMINATION
+
+This license is effective until terminated. The Author may terminate this Agreement at any time if you fail to comply with any term herein. Upon termination, you must cease all use of the Software and delete all copies in your possession.
+
+15. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws applicable to the Author's jurisdiction, without regard to conflict of law principles, unless otherwise required by applicable local law.
+
+16. CHANGES TO THIS AGREEMENT
+
+The Author reserves the right to modify this Agreement at any time. Continued use of the Software after changes are published constitutes acceptance of the revised Agreement.
+
+17. ACKNOWLEDGMENT
+
+By using the Software, you acknowledge that you have read this Agreement, understand it, and agree to be bound by its terms.
