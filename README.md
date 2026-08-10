@@ -47,7 +47,9 @@ Pairs well with a VPN of your choice for a solid privacy baseline.
 
 ## ⭐ Pro — What You Get on Top of Free
 
-Pro is a monthly or yearly subscription, one license per PC. It unlocks three deep-inspection tools that don't exist in Free at all:
+Pro is a 4.99$ yearly subscription, one license per PC. 
+
+It unlocks three deep-inspection tools that don't exist in Free at all:
 
 - 🌐 **DNS Viewer** — live DNS activity via ETW, including failed queries, with a full detail view per entry
   - **Blacklist import** — bring your own IP blacklist from a `.txt` file
@@ -61,7 +63,7 @@ Pro is a monthly or yearly subscription, one license per PC. It unlocks three de
 
 - 📋 **Scheduled Task Check** — audits scheduled tasks for anything unusual, scored the same way as drivers and services (no memory/snapshot component needed here, since tasks don't change the way running drivers do)
 
-As with everything else in TWK3R, false positives are possible — these tools do very deep inspection, so anything out of the ordinary gets flagged. Scoring gives you the context to decide for yourself. TWK3R doesn't have its own VirusTotal integration (no API key) — it just opens the relevant hash lookup in your default browser so you can check it on VirusTotal directly.
+As with everything else in TWK3R, false positives are possible — these tools do very deep inspection, so anything out of the ordinary gets flagged. Scoring gives you the context to decide for yourself. You can run VirusTotal hashcheck from the app into your browers to cross-check.
 
 ---
 
@@ -99,15 +101,15 @@ No. Purging targets tracking artifacts, logs, caches, and similar system-generat
 Yes, TWK3R requires Administrator privileges to function.
 
 **Does TWK3R need an installer?**
-No — it's portable. Extract the archive and run `twk3r.exe` as Administrator. Settings are registry-backed; no config files are written elsewhere.
+No — it's portable. Extract the archive and run `TWK3R.exe` as Administrator. Settings are registry-backed; no config files are written elsewhere.
 
 **How is TWK3R licensed for Pro?**
-One license per PC, billed monthly or yearly. This is also the only reason Pro ever touches the network — it checks that your license is active. Nothing about you is stored by that check.
+One license per PC, billed yearly. 
 
 **Does TWK3R check files against VirusTotal itself?**
-No — TWK3R doesn't have a VirusTotal API integration. The "check on VirusTotal" buttons (available on drivers in the Anomaly Check) just open the relevant hash lookup in your default browser, where you can review it yourself on VirusTotal's site.
+No — TWK3R doesn't have a VirusTotal API integration. Hopefully we can change that with your support!
 
-**Is Free really fully offline?**
+**Is Free fully offline?**
 Yes. Free makes no network calls at all — no telemetry, no update checks, nothing. All config is stored locally in the folder TWK3R runs from.
 
 **What's the difference between Free and Pro?**
@@ -123,7 +125,7 @@ TWK3R is built for people managing systems they own or are authorized to adminis
 
 **Use this software only on systems you own or have explicit authorization to manage.** 🔑
 
-How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./TWK3R_EULA_v2.md). 📄
+How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./EULA.md). 📄
 
 ---
 
@@ -137,4 +139,4 @@ Any future distribution channel will be announced at the top of this README, nev
 
 ## 📜 License
 
-All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./TWK3R_EULA_v2.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
+All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./EULA.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
