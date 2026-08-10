@@ -21,38 +21,99 @@ Windows hides most of what it's actually doing. TWK3R makes it visible — every
 
 Not an antivirus. An inspection tool first: see what's on your system and why, before you decide what to do about it. Findings are scored and explained so you can tell a poorly-signed but harmless driver apart from an actual anomaly — false positives happen, and TWK3R gives you the context to judge them yourself instead of guessing.
 
-Covers registry and browser purging, driver/service/scheduled-task auditing, OS service control, DNS monitoring, network hardening, policy configuration, a temp file viewer, CMD/PowerShell in one place, and an adjustable theme.
+TWK3R comes in two tiers: **Free**, which covers cleanup, hardening, and day-to-day maintenance, and **Pro**, which adds deep inspection tooling — DNS analysis, driver/kernel anomaly detection, and scheduled task auditing.
 
 Pairs well with a VPN of your choice for a solid privacy baseline.
 
 ---
 
-## 🧩 Feature Summary
+## 🆓 Free — Feature Summary
 
 - 💻 Built-in **terminal** — PowerShell and Command Prompt, multiple sessions, full copy/paste support
-- 🌐 **DNS Viewer** — live DNS activity via ETW, including failed queries, with a full detail view per entry
-- 🚫 flags suspicious DNS entries in **purple**, blacklist hits in **red** — import your own blacklist, export results to CSV
-- 🛡 **Configuration Audit** across drivers, services, and scheduled tasks — including hidden and kernel-level — scored Clean / Warning / Alert
-- 📸 **Snapshot Comparison** for drivers — see what's been added, removed, or modified since your last scan
-- 🔍 Driver **detail view** — compare hashes, jump to VirusTotal, open file location, export findings
-- ⚙ **OS Service Check** — flags telemetry, tracking, sync, and noise-generating services, with context on what each one actually does before you disable it
 - 🗃 **Registry purger** — clears HKCU, HKLM, HKCU-V, logs, jumplists, Recycle Bin, hidden files, event logs, hives, Prefetch, Shellbags, and thumbnail cache, backed by a System Restore safety net
 - 🧹 **Browser purger** — securely deletes browser tracking data, unrecoverable by design
 - ⚡ **Quick Purge** — a lightweight, repeatable cleanup for the handful of things worth clearing regularly
-- 📋 **policy configuration** — fast, simple rule sets for reducing telemetry, attack surface, and background noise
+- 📋 **Policy configuration** — fast, simple rule sets for reducing telemetry, attack surface, and background noise
 - 🌐 **Network hardening** — disable mDNS, NetBIOS over TCP/IP, system-wide UPnP, and IPv6
 - 🛰 **GDID stopper & cleaner** — blocks Microsoft's GDID telemetry server-side, removes leftover traces
 - ☁ **OneDrive remover** — fully disables and removes OneDrive, including its files; personal files are never touched (restart required)
-- 🔥 **temperature monitor** — real-time CPU (per-core, with session max/min) and GPU readings
+- 🤖 **Copilot+ AI remover** — removes Copilot+ AI components from the system
+- 🧭 **Edge remover** — removes Microsoft Edge from the system
+- ⚙ **OS Service Check** — flags telemetry, tracking, sync, and noise-generating services, with context on what each one actually does before you disable it
+- 🔥 **Temperature monitor** — real-time CPU (per-core, with session max/min) and GPU readings
 - ...and more!
+
+---
+
+## ⭐ Pro — What You Get on Top of Free
+
+Pro is a monthly or yearly subscription, one license per PC. It unlocks three deep-inspection tools that don't exist in Free at all:
+
+- 🌐 **DNS Viewer** — live DNS activity via ETW, including failed queries, with a full detail view per entry
+  - **Blacklist import** — bring your own IP blacklist from a `.txt` file
+  - **DNS Heuristic Scanner** — scores DNS requests/domains for suspicious or malicious patterns, flagged in **purple**; confirmed blacklist hits flagged in **red**
+  - **DNS Trace** — extended per-query detail beyond the base log view
+  - Export findings to CSV
+
+- 🛡 **Anomaly Check (Driver/Kernel Scan)** — scans all drivers, including kernel-level and hidden drivers, scores and verifies each one, and presents the results for your review
+  - **Snapshot Comparison** — takes a memory snapshot of scanned drivers so you can compare it later and see what's been added, removed, or modified
+  - Driver **detail view** — compare hashes, open the file's VirusTotal page in your browser to check it yourself, open file location, export findings
+
+- 📋 **Scheduled Task Check** — audits scheduled tasks for anything unusual, scored the same way as drivers and services (no memory/snapshot component needed here, since tasks don't change the way running drivers do)
+
+As with everything else in TWK3R, false positives are possible — these tools do very deep inspection, so anything out of the ordinary gets flagged. Scoring gives you the context to decide for yourself. TWK3R doesn't have its own VirusTotal integration (no API key) — it just opens the relevant hash lookup in your default browser so you can check it on VirusTotal directly.
 
 ---
 
 ## 🔒 Privacy & Data Handling
 
-**TWK3R does not collect, transmit, store, or share any data.** Everything runs locally — no telemetry, analytics, crash reporting, or update pinging. No servers or accounts exist on our end, because nothing is ever sent. ✅
+**Free is fully offline.** No network calls, no telemetry, analytics, crash reporting, or update pinging — nothing is ever sent anywhere. All settings and config files are written locally to the TWK3R directory the app runs from, not scattered elsewhere on the system. ✅
 
-Unauthorized data collection is incompatible with this project's purpose and will not be added, ever. 🚫
+**Pro makes exactly one type of network call: license validation.** It checks that your license/subscription is active. This check doesn't store anything about you — it's a validation call, not data collection.
+
+Beyond that license check in Pro, TWK3R does not collect, transmit, store, or share any data. No servers or accounts exist on our end for anything besides validating your Pro license. Unauthorized data collection is incompatible with this project's purpose and will not be added, ever. 🚫
+
+---
+
+## ❓ FAQ
+
+**Will this break Windows Update?**
+No. TWK3R doesn't interfere with Windows Update — if anything, it makes downloads more secure by reducing data leakage and preventing apps (and Windows components) from phoning home unnecessarily.
+
+**Will disabling services break some apps or features?**
+Some services, yes — but not all of them, and not by default. Most of the time you'll already know if a flagged service is one you actually need, so you can simply leave it enabled and skip configuring it. TWK3R explains what each service does before you touch it; it won't make the call for you.
+
+**Is TWK3R compatible with x64, x32, and ARM64?**
+Yes, all three are supported.
+
+**Why does VirusTotal flag TWK3R?**
+The temperature monitor uses an older version of LibreHardwareMonitorLib for per-core CPU/GPU readings — a deliberate, less-optimal workaround chosen to avoid a lot of extra engineering work. If you check the driver (`0TWK3R` / `twk3r.sys`) and it looks flagged, it's outdated, not malicious: it does have a known vulnerability, but TWK3R does not abuse it. The only thing that driver does is expose your CPU/GPU temps to the app. If you'd rather not have it on your system at all, you can delete `twk3r.sys` after it's created and use TWK3R without CPU/GPU temp readings.
+
+**Is TWK3R signed?**
+No — the app is currently unsigned, which is part of why antivirus tools and VirusTotal may flag it. This is a known false positive tied to how deeply TWK3R interacts with low-level system files, drivers, and the registry.
+
+**Will Quick Purge or the Registry/Browser Purger delete my personal files?**
+No. Purging targets tracking artifacts, logs, caches, and similar system-generated data — not your documents, photos, or personal files. OneDrive Remover, Copilot+ AI Remover, and Edge Remover work the same way: they remove the app/component itself, never your personal data.
+
+**Do I need to be an Administrator to run TWK3R?**
+Yes, TWK3R requires Administrator privileges to function.
+
+**Does TWK3R need an installer?**
+No — it's portable. Extract the archive and run `twk3r.exe` as Administrator. Settings are registry-backed; no config files are written elsewhere.
+
+**How is TWK3R licensed for Pro?**
+One license per PC, billed monthly or yearly. This is also the only reason Pro ever touches the network — it checks that your license is active. Nothing about you is stored by that check.
+
+**Does TWK3R check files against VirusTotal itself?**
+No — TWK3R doesn't have a VirusTotal API integration. The "check on VirusTotal" buttons (available on drivers in the Anomaly Check) just open the relevant hash lookup in your default browser, where you can review it yourself on VirusTotal's site.
+
+**Is Free really fully offline?**
+Yes. Free makes no network calls at all — no telemetry, no update checks, nothing. All config is stored locally in the folder TWK3R runs from.
+
+**What's the difference between Free and Pro?**
+Free covers day-to-day cleanup, hardening, and maintenance (registry/browser purging, network hardening, service checks, OneDrive/Copilot+/Edge removal, temperature monitoring, and more). Pro adds three dedicated deep-inspection tools not available in Free at all: the DNS Viewer, Anomaly Check (driver/kernel scanning), and Scheduled Task Check.
+
+*(More questions will be added here as they come up — if you have one that isn't answered, open an issue.)*
 
 ---
 
