@@ -119,10 +119,11 @@ Free covers day-to-day cleanup, hardening, and maintenance (registry/browser pur
 
 Pro adds three dedicated deep-inspection tools not available in Free at all: the DNS Viewer, Anomaly Check (driver/kernel scanning), and Scheduled Task Check.
 
-**ONLY PRO** 
-
+**ONLY PRO FAQ** 
 **Why did a VirusTotal Sandbox test mention "LSASS" or flag something about it?**
+
 *Sigma Integrated Rule Set (GitHub) - Teymur Kheirkhabarov, oscd.community*
+
 TWK3R checks that important Windows system processes (like `lsass.exe`) are running from their real, normal location on your PC. This catches malware that pretends to be a system process from somewhere it shouldn't be. TWK3R does not inject anything into LSASS or touch its memory — it just checks "is this really where it's supposed to be?" Some scanners flag this kind of check because it *looks* similar to what malware does, even though the actual behavior is completely different.
 
 ---
