@@ -125,7 +125,7 @@ TWK3R is built for people managing systems they own or are authorized to adminis
 
 **Use this software only on systems you own or have explicit authorization to manage.** 🔑
 
-How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./EULA.md). 📄
+How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./EULA.txt). 📄
 
 ---
 
@@ -139,4 +139,4 @@ Any future distribution channel will be announced at the top of this README, nev
 
 ## 📜 License
 
-All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./EULA.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
+All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./EULA.txt) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
