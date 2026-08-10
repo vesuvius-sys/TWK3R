@@ -89,7 +89,7 @@ Some services, yes — but not all of them, and not by default. Most of the time
 Yes, all three are supported.
 
 **Why does VirusTotal flag TWK3R?**
-The temperature monitor uses an older version of LibreHardwareMonitorLib for per-core CPU/GPU readings — a deliberate, less-optimal workaround chosen to avoid a lot of extra engineering work. If you check the driver (`0TWK3R` / `twk3r.sys`) and it looks flagged, it's outdated, not malicious: it does have a known vulnerability, but TWK3R does not abuse it. The only thing that driver does is expose your CPU/GPU temps to the app. If you'd rather not have it on your system at all, you can delete `twk3r.sys` after it's created and use TWK3R without CPU/GPU temp readings.
+The temperature monitor uses an older version of LibreHardwareMonitorLib for per-core CPU/GPU readings — a deliberate, less-optimal workaround chosen to avoid a lot of extra engineering work. If you check the driver (`0TWK3R` / `twk3r.sys`) and it looks flagged, it's outdated, not malicious: it does have a known vulnerability, but TWK3R does not abuse it. If you'd rather not have it on your system at all, delete `twk3r.sys` after it's created and use TWK3R without CPU/GPU temp readings.
 
 **Is TWK3R signed?**
 No — the app is currently unsigned, which is part of why antivirus tools and VirusTotal may flag it. This is a known false positive tied to how deeply TWK3R interacts with low-level system files, drivers, and the registry.
@@ -101,21 +101,29 @@ No. Purging targets tracking artifacts, logs, caches, and similar system-generat
 Yes, TWK3R requires Administrator privileges to function.
 
 **Does TWK3R need an installer?**
-No — it's portable. Extract the archive and run `TWK3R.exe` as Administrator. Settings are registry-backed; no config files are written elsewhere.
+No — it's portable. 
+Extract the archive and run `TWK3R.exe` as Administrator. 
+Settings are registry-backed; no config files are written elsewhere.
 
 **How is TWK3R licensed for Pro?**
-One license per PC, billed yearly. 
+One license per PC, 4.99$ billed yearly. There's promo option with 2+1, make sure to share w/ your friends! 
 
 **Does TWK3R check files against VirusTotal itself?**
 No — TWK3R doesn't have a VirusTotal API integration. Hopefully we can change that with your support!
 
 **Is Free fully offline?**
-Yes. Free makes no network calls at all — no telemetry, no update checks, nothing. All config is stored locally in the folder TWK3R runs from.
+Yes. Free makes no network calls at all — no telemetry, no update checks.
 
 **What's the difference between Free and Pro?**
-Free covers day-to-day cleanup, hardening, and maintenance (registry/browser purging, network hardening, service checks, OneDrive/Copilot+/Edge removal, temperature monitoring, and more). Pro adds three dedicated deep-inspection tools not available in Free at all: the DNS Viewer, Anomaly Check (driver/kernel scanning), and Scheduled Task Check.
+Free covers day-to-day cleanup, hardening, and maintenance (registry/browser purging, network hardening, service checks, OneDrive/Copilot+/Edge removal, temperature monitoring, and more). 
 
-*(More questions will be added here as they come up — if you have one that isn't answered, open an issue.)*
+Pro adds three dedicated deep-inspection tools not available in Free at all: the DNS Viewer, Anomaly Check (driver/kernel scanning), and Scheduled Task Check.
+
+**ONLY PRO** 
+
+**Why did a VirusTotal Sandbox test mention "LSASS" or flag something about it?**
+*Sigma Integrated Rule Set (GitHub) - Teymur Kheirkhabarov, oscd.community*
+TWK3R checks that important Windows system processes (like `lsass.exe`) are running from their real, normal location on your PC. This catches malware that pretends to be a system process from somewhere it shouldn't be. TWK3R does not inject anything into LSASS or touch its memory — it just checks "is this really where it's supposed to be?" Some scanners flag this kind of check because it *looks* similar to what malware does, even though the actual behavior is completely different.
 
 ---
 
@@ -125,7 +133,7 @@ TWK3R is built for people managing systems they own or are authorized to adminis
 
 **Use this software only on systems you own or have explicit authorization to manage.** 🔑
 
-How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./EULA.md). 📄
+How it's used from there is on the user — we don't endorse or accept liability for misuse. Full terms are in the [EULA](./EULA.txt). 📄
 
 ---
 
@@ -139,4 +147,4 @@ Any future distribution channel will be announced at the top of this README, nev
 
 ## 📜 License
 
-All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./EULA.md) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
+All rights reserved. TWK3R is closed-source software distributed under a custom [EULA](./EULA.txt) — not an open-source license. You may run it; you may not redistribute, modify, or reverse-engineer it. See the EULA for full terms.
