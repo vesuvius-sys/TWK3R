@@ -119,7 +119,8 @@ Free covers day-to-day cleanup, hardening, and maintenance (registry/browser pur
 
 Pro adds three dedicated deep-inspection tools not available in Free at all: the DNS Viewer, Anomaly Check (driver/kernel scanning), and Scheduled Task Check.
 
-**ONLY PRO FAQ** 
+*ONLY PRO* 
+
 **Why did a VirusTotal Sandbox test mention "LSASS" or flag something about it?**
 
 *Sigma Integrated Rule Set (GitHub) - Teymur Kheirkhabarov, oscd.community*
